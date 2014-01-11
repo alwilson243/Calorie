@@ -1,0 +1,2 @@
+Calorie calculator written in Java that uses the Apache POI to interact with an excel spreadsheet
+to read in food information and save user generated daily caloric totals.
