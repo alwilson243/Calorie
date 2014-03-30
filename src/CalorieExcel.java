@@ -89,7 +89,6 @@ public class CalorieExcel extends JFrame
           public void actionPerformed(ActionEvent e)
           {
             count += calorie;
-            System.out.println(count);
             countStr = Double.toString(count);
             text.setText(countStr);
           }
@@ -104,7 +103,7 @@ public class CalorieExcel extends JFrame
             {
                 try
                 {
-                	// If overwriting current day's calories
+                    // If overwriting current day's calories
                     if(overwrite)
                         overwriteSave();
                     // Not the same day as previous writing
@@ -186,12 +185,11 @@ public class CalorieExcel extends JFrame
     {
         int length = foodList.size();
         String[] merged = new String[length];
+        
         for(int i = 0; i < length; i++)
         {
             merged[i] = foodList.get(i) + " (" + servingList.get(i) + ")";
         }
-        for(int j = 0; j < length ; j++)
-            System.out.println(merged[j]);
         
         return merged;
     }
